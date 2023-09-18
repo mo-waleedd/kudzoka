@@ -1,0 +1,345 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    list-style: none;
+}
+
+/* small */
+@media (min-width:786px) {
+    .container {
+        width: 750px;
+    }
+}
+
+/* Medium */
+@media (min-width:992px) {
+    .container {
+        width: 970px;
+    }
+}
+
+/* Large */
+@media (min-width:1200px) {
+    .container {
+        width: 1360px;
+    }
+}
+
+.container {
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* start header */
+.header {
+    padding-top: 20px;
+    position: absolute;
+    width: 100%;
+    z-index: 2;
+}
+
+.header .container {
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+}
+.header .container .logo img {
+    height: 70px;
+    transition: 0.4s;
+}
+.header .container .logo:hover{
+    transform: rotate(-360deg);
+}
+.header .container nav ul {
+    display: flex;
+}
+.header .container nav ul li{
+    padding: 0px 40px;
+    padding-bottom: 15px;
+}
+
+.header .container nav ul li a{
+    display: block;
+    text-decoration: none;
+    color: #545d62;
+    font-size: 14px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+.header .container nav ul li .active {
+    border-bottom: 3px solid #714b7c;
+    
+}
+.header .container li a:hover {
+    border-bottom: solid 3px #714b7c;
+}
+
+.header .container nav {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header .container nav .form {
+    position: relative;
+    text-align: center;
+    padding: 0 30px;
+    color: #545d62;
+    font-size: 14px;
+}
+.header .container nav .form img{
+    position: absolute;
+    top: -5px;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+    text-transform: capitalize;
+}
+/* start landing */
+.landing{
+    position: relative;
+    min-height: 100vh;
+}
+.landing .landing-img{
+    width: 100%;
+    position: absolute;
+    min-height: 100%;
+    top: -14%;
+}
+.landing .container{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.landing-imges{
+    position: relative;
+}
+.landing .container img{
+    position: absolute;
+}
+.landing .container .one{
+    width: 48%;
+    right: 0px;
+    top: 45px;
+}
+.landing .container .two{
+    width: 20%;
+    right: 16%;
+    top: 12%;
+}
+.landing .container .three{
+    width: 30%;
+    bottom: 10%;
+    right: 10%;
+}
+.landing .bottom{
+    position: absolute;
+    width: 80%;
+    bottom: -3%;
+    left: -4%;
+}
+.landing .container .text{
+    position: absolute;
+    top: 36%;
+    max-width: 44%;
+    left: 9%;
+}
+.landing .container .text h2{
+    color: #545d62;
+    font-size: 48px;
+    text-transform: capitalize;
+    margin-bottom: 20px;
+}
+.landing .container .text h2 span{
+    color: #714b7c;
+}
+.landing .container .text p{
+    text-transform: capitalize;
+    font-size: 23px;
+    color: #777;
+}
+/* start content */
+.content{
+    min-height: 100vh;
+}
+.content .container{
+    position: relative;
+    min-height: 200vh;
+}
+.content .container .box{
+    position: absolute;
+    text-align: center;
+    width: 356px;
+}
+.content .container .box img{
+    width: 50%;
+}
+.content .container .box h3{
+    margin: 10px;
+    color: #545d62;
+    text-transform: capitalize
+}
+.content .container .box p{
+    color: #777;
+}
+.content .container .one{
+    top:14.5%
+}
+.content .container .two{
+    top: 23%;
+    left: 36%;
+}
+.content .container .three{
+    right: 0;
+    top: 41.5%;
+}
+.content .container .why{
+    top: 42%;
+}
+.content .container .why img{
+    width: 100%;
+}
+.content .container .why .text{
+    position: absolute;
+    top: 31%;
+    left: 14%;
+}
+.content .container .why .text h3{
+    color: white;
+    margin: 0;
+    font-size: 44px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+.content .container .why .text p{
+    color: white;
+    text-align: start;
+    font-size: 20px;
+}
+.content .container .conect{
+    width: 82%;
+    left: 15%;
+    top: 140px;
+    z-index: -1;
+}
+.content .container .end{
+    display: flex;
+    position: absolute;
+    bottom: 10%;
+    width: 100%;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+}
+.content .container .end > img{
+    position: relative;
+    height: 200px;
+}
+.content .container .end .box{
+    position: relative;
+}
+.content .container .end .box p{
+    width: 72%;
+    margin: auto;
+}
+.content .container .end .box img{
+    width: 100%;
+}
+.content .container > img{
+    position: absolute;
+}
+/* start footer */
+.footer{
+    overflow: hidden;
+    position: relative;
+}
+.footer .container{
+    display: flex;
+    align-items: end;
+}
+.footer .one{
+    width: 113%;
+    position: absolute;
+    z-index: -1;
+    bottom: -250px;
+    left: -61px;
+}
+.footer .two{
+    position: relative;
+    bottom: -4px;
+    right: -16%;
+    width: 66%;
+}
+.footer .container .stores{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 20px;
+}
+.footer .container > div{
+    display: flex;
+    flex-direction: column;
+}
+.footer .container .stores div{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 20px;
+}
+.footer .container .stores div .text p{
+    font-size: 10px;
+    color: #777;
+}
+.footer .container .stores div .text span{
+    color: #545d62;
+}
+.footer .container .stores .text{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+}
+.footer .container .stores i{
+    font-size: 25px;
+}
+.footer .container .social i{
+    font-size: 25px;
+    color: white;
+    padding-right: 20px;
+}
+.footer .container .links ul {
+    display: flex;
+    margin-top: 20px;
+}
+.footer .container .links ul li{
+    padding-right: 15px;
+    padding-bottom: 15px;
+}
+
+.footer .container .links ul li a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 12px;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+
+/* end footer */
