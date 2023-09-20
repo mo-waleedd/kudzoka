@@ -327,7 +327,7 @@ ul {
 .footer .container .links ul {
     display: flex;
     margin-top: 20px;
-}
+}.two
 .footer .container .links ul li{
     padding-right: 15px;
     padding-bottom: 15px;
@@ -340,6 +340,7 @@ ul {
     font-size: 12px;
     font-weight: 500;
     text-transform: capitalize;
+    padding-right: 10px;
 }
 
 /* end footer */
